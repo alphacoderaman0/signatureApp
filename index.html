@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pngwing.com.png">
+
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading">Signature App</h1>
+        <p class="line"></p>
+        <div class="top">
+            <div class="block">
+                <p>Text Color Picker</p>
+                <input type="color" id="colorPicker">
+            </div>
+            <div class="block">
+                <p>Background</p>
+                <input type="color" id="canvasColor">
+            </div>
+            <div class="block">
+                <p>Font Size</p>
+                <!-- <input type="number" id="fontSize"> -->
+                <select id="fontSize">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+            </div>
+        </div> 
+        <canvas  class="canvas" id="myCanvas" width="800" height="400">
+        </canvas> 
+        <div class="bottom">
+            <button class="btnClear" id="btnClear">Clear</button>
+            <button class="btnSave" id="btnSave">Save & Download</button>
+            <button class="btnReset" id="btnReset">Retrive Saved Signature</button>
+        </div>
+    </div>
+    
+</body>
+</html>
